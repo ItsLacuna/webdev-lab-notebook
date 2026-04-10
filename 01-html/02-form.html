@@ -5,10 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Exercise 02 - Form</title>
+
+    <style>
+      .no-style {
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .no-style legend {
+        padding: 0;
+        margin: 0;
+        font-weight: normal;
+      }
+    </style>
   </head>
   <body>
     <main>
-      <!-- Add your code here -->
+      <h1>Roth IRA Calculator</h1>
+
+      <form>
+        <p>
+          <label for="balance">Balance ($)</label><br />
+          <input type="text" id="balance" name="balance" /><br />
+        </p>
+        <p>
+          <label for="contribution">Annual Contribution (4)</label><br />
+          <input type="text" id="contribution" name="contribution" /><br />
+        </p>
+        <fieldset class="no-style">
+          <legend>Maximize contributions?</legend>
+          <input type="radio" id="yes" name="maximize" value="yes" />
+          <label for="yes">Yes</label>
+
+          <input type="radio" id="no" name="maximize" value="no" />
+          <label for="no">No</label>
+        </fieldset>
+        <p>
+          <label for="return">Expected rate of return (5)</label><br />
+          <input type="number" id="return" name="return" /><br />
+        </p>
+        <p>
+          <label for="age">Current age</label><br />
+          <input type="number" id="age" name="age" /><br />
+        </p>
+        <p>
+          <label for="retire-age">Retirement age</label><br />
+          <input type="number" id="retire-age" name="retire-age" /><br />
+        </p>
+        <p>
+          <label for="tax-rate">Marginal tax rate (%)</label><br />
+          <input type="number" id="tax-rate" name="tax-rate" /><br />
+        </p>
+        <input type="submit" value="Calculate" />
+        <input type="reset" value="Reset" />
+      </form>
+      <p>
+        this exercise is a simplified version of the Roth IRA Calculator at
+        <a href="https://www.calculator.net/roth-ira-calculator.html"
+          >calculator.net</a
+        >
+      </p>
     </main>
   </body>
 </html>
