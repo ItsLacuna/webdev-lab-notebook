@@ -25,14 +25,16 @@
       <h1>Roth IRA Calculator</h1>
 
       <form>
-        <p>
+        <div>
           <label for="balance">Balance ($)</label><br />
-          <input type="text" id="balance" name="balance" /><br />
-        </p>
-        <p>
-          <label for="contribution">Annual Contribution (4)</label><br />
-          <input type="text" id="contribution" name="contribution" /><br />
-        </p>
+          <input type="text" id="balance" name="balance" />
+        </div>
+        <br />
+        <div>
+          <label for="contribution">Annual Contribution ($)</label><br />
+          <input type="text" id="contribution" name="contribution" />
+        </div>
+        <br />
         <fieldset class="no-style">
           <legend>Maximize contributions?</legend>
           <input type="radio" id="yes" name="maximize" value="yes" />
@@ -41,24 +43,31 @@
           <input type="radio" id="no" name="maximize" value="no" />
           <label for="no">No</label>
         </fieldset>
-        <p>
-          <label for="return">Expected rate of return (5)</label><br />
-          <input type="number" id="return" name="return" /><br />
-        </p>
-        <p>
+        <br />
+        <div>
+          <label for="return">Expected rate of return (%)</label><br />
+          <input type="number" id="return" name="return" />
+        </div>
+        <br />
+        <div>
           <label for="age">Current age</label><br />
-          <input type="number" id="age" name="age" /><br />
-        </p>
-        <p>
+          <input type="number" id="age" name="age" />
+        </div>
+        <br />
+        <div>
           <label for="retire-age">Retirement age</label><br />
-          <input type="number" id="retire-age" name="retire-age" /><br />
-        </p>
-        <p>
+          <input type="number" id="retire-age" name="retire-age" />
+        </div>
+        <br />
+        <div>
           <label for="tax-rate">Marginal tax rate (%)</label><br />
-          <input type="number" id="tax-rate" name="tax-rate" /><br />
-        </p>
-        <input type="submit" value="Calculate" />
-        <input type="reset" value="Reset" />
+          <input type="number" id="tax-rate" name="tax-rate" />
+        </div>
+        <br />
+        <div>
+          <input type="submit" value="Calculate" />
+          <input type="reset" value="Reset" />
+        </div>
       </form>
       <p>
         this exercise is a simplified version of the Roth IRA Calculator at
