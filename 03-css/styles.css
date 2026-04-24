@@ -1,0 +1,210 @@
+:root {
+  --background-color: #f5f5f5;
+  --text-color: #121212;
+  --ice-blue-juvie: #8fbcd4;
+  --gothic-gray-blue: #6f8796;
+  --dark-slate-infinity: #1f2a33;
+  --gray-border: #cccccc;
+  --table-header: #e0e0e0;
+  --table-footer: #e0e0e0;
+  --table-background: #fafafa;
+
+  --form-background: #fafafa;
+  --form-accent-color: #0b0b4d;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Styles */
+.books-container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0 1rem;
+}
+
+.cinzel-font {
+  font-family: "Cinzel", serif;
+}
+
+.main-header {
+  color: var(--gothic-gray-blue);
+  text-align: center;
+  margin: 3rem;
+}
+
+/* Section Styles */
+.section {
+  margin-top: 2rem;
+}
+.secondary-header {
+  border-bottom: 2px solid var(--gray-border);
+}
+
+/* Navigation Styles */
+.nav {
+  background-color: var(--dark-slate-infinity);
+  color: var(--ice-blue-juvie);
+}
+
+.nav-list {
+  padding: 1rem;
+  padding-left: 0;
+  margin: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 1rem;
+}
+.nav-link {
+  padding: 0.3rem 0.5rem;
+  color: var(--ice-blue-juvie);
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
+}
+
+.nav-link:hover {
+  background-color: var(--ice-blue-juvie);
+  color: var(--dark-slate-infinity);
+  border-radius: 6px;
+}
+
+/* Book List Styles */
+.book-list li {
+  margin-bottom: 0.5rem;
+}
+
+.book-list li > ol {
+  margin-top: 0.6rem;
+}
+
+/* Cover Styles */
+.cover-container {
+  text-align: center;
+}
+
+.cover-image {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.cover-image:hover {
+  transform: scale(1.05);
+}
+
+/* Table Styles */
+.table-container {
+  border-collapse: collapse;
+}
+.table-container th,
+.table-container td {
+  border: 1px solid var(--gray-border);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.table-container tr:nth-child(even) {
+  background-color: var(--table-background);
+}
+
+.table-header {
+  background-color: var(--table-header);
+  font-weight: bold;
+}
+
+.table-footer {
+  background-color: var(--table-footer);
+  font-weight: bold;
+}
+
+/* Form - IRA Calc */
+
+.form-container {
+  max-width: 420px;
+  margin: 100px auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: var(--form-background);
+}
+
+.form-element {
+  margin-bottom: 0.5rem;
+}
+
+.form-label {
+  display: inline-block;
+  width: 50%;
+}
+.form-input {
+  display: inline-block;
+  width: 450;
+  border: 1px solid var(--gray-border);
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+.form-radio-group {
+  margin-left: 40px;
+  margin-bottom: 0.75rem;
+}
+
+.form-header {
+  text-align: center;
+  color: var(--form-accent-color);
+}
+.form-element:last-of-type {
+  margin: 2rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1rem;
+  width: 49%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-submit {
+  background-color: var(--form-accent-color);
+  color: white;
+}
+.btn-reset {
+  background-color: var(--gray-border);
+  color: var(--text-color);
+}
+
+.btn-submit:hover {
+  background-color: var(--dark-slate-infinity);
+  color: var(--ice-blue-juvie);
+}
+
+.btn-reset:hover {
+  background-color: var(--dark-slate-infinity);
+  color: var(--ice-blue-juvie);
+}
+.form-note {
+  font-size: 0.8rem;
+}
+
+.color-blue {
+  background-color: var(--form-accent-color);
+}
