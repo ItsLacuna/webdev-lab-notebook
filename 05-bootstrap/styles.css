@@ -1,0 +1,15 @@
+:root {
+  --purple: #800080;
+  --lavender: #e6e6fa;
+  --light-text-color: #fefefe;
+  --dark-background-color: black;
+  --hover-color: limegreen;
+}
+
+.ira-form {
+  max-width: 400px;
+}
+
+.text-primary {
+  color: #0c0c8b !important;
+}
